@@ -17,10 +17,11 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "http://localhost:5173", "https://speakzy.onrender.com"],
-    credentials: true, // allow frontend to send cookies
+    origin: ["http://localhost:5173", "https://speakzy.onrender.com"],
+    credentials: true,
   })
 );
+
 
 app.use(express.json());
 app.use(cookieParser());
